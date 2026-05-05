@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Environment variables
+.env
+
+# Database
+db.sqlite3
+
+# Logs
+*.log
+
+# Mac
+.DS_Store
+
+# Static / media
+staticfiles/
+
+# Node (React)
+node_modules/
+dist/
+build/
+
+# VS Code
+.vscode/
+
+# JetBrains (PyCharm etc.)
+.idea/
+
+# Coverage / test
+.coverage
+htmlcov/
+
+# OS files
+Thumbs.db
