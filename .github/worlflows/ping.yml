@@ -1,0 +1,13 @@
+name: Ping Backend
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Backend
+        run: curl -f https://ticket-booking-dgkw.onrender.com/api/movies/ || echo "Ping failed"
