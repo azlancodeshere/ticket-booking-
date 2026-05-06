@@ -108,7 +108,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CORS
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://your-app.vercel.app",  # ← update after Vercel deploy
+    "https://ticket-booking-lemon.vercel.app",  # ← update after Vercel deploy
 ]
 CORS_ALLOW_ALL_ORIGINS = True  # temporary until frontend deployed
 
