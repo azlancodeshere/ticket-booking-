@@ -25,7 +25,8 @@ INSTALLED_APPS = [
     # Third party
     'rest_framework',
     'corsheaders',
-
+    'cloudinary',              
+    'cloudinary_storage',
     # Our apps
     'movies',
     'bookings',
@@ -117,3 +118,16 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
 }
+
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
+    'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
+    'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://ticket-booking-dgkw.onrender.com',
+]
