@@ -111,7 +111,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://ticket-booking-lemon.vercel.app",  # ← update after Vercel deploy
 ]
-CORS_ALLOW_ALL_ORIGINS = True  # temporary until frontend deployed
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -130,4 +130,5 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 CSRF_TRUSTED_ORIGINS = [
     'https://ticket-booking-dgkw.onrender.com',
+    'https://ticket-booking-lemon.vercel.app',
 ]
